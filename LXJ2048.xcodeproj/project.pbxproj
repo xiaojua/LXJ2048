@@ -11,7 +11,6 @@
 		C166B09B1E553C2300A84D46 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C166B09A1E553C2300A84D46 /* AppDelegate.m */; };
 		C166B0A11E553C2300A84D46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C166B09F1E553C2300A84D46 /* Main.storyboard */; };
 		C166B0A31E553C2300A84D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C166B0A21E553C2300A84D46 /* Assets.xcassets */; };
-		C166B0A61E553C2300A84D46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C166B0A41E553C2300A84D46 /* LaunchScreen.storyboard */; };
 		C166B0B11E553C2300A84D46 /* LXJ2048Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C166B0B01E553C2300A84D46 /* LXJ2048Tests.m */; };
 		C166B0BC1E553C2300A84D46 /* LXJ2048UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C166B0BB1E553C2300A84D46 /* LXJ2048UITests.m */; };
 		C166B0D31E55400400A84D46 /* LXJHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C166B0D21E55400400A84D46 /* LXJHomeViewController.m */; };
@@ -46,7 +45,6 @@
 		C166B09A1E553C2300A84D46 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
 		C166B0A01E553C2300A84D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C166B0A21E553C2300A84D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C166B0A51E553C2300A84D46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C166B0A71E553C2300A84D46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C166B0AC1E553C2300A84D46 /* LXJ2048Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LXJ2048Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C166B0B01E553C2300A84D46 /* LXJ2048Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LXJ2048Tests.m; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 				C166B0991E553C2300A84D46 /* AppDelegate.h */,
 				C166B09A1E553C2300A84D46 /* AppDelegate.m */,
 				C166B09F1E553C2300A84D46 /* Main.storyboard */,
-				C166B0A41E553C2300A84D46 /* LaunchScreen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -325,7 +322,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C166B0A61E553C2300A84D46 /* LaunchScreen.storyboard in Resources */,
 				C166B0A31E553C2300A84D46 /* Assets.xcassets in Resources */,
 				C166B0A11E553C2300A84D46 /* Main.storyboard in Resources */,
 			);
@@ -401,15 +397,6 @@
 				C166B0A01E553C2300A84D46 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		C166B0A41E553C2300A84D46 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C166B0A51E553C2300A84D46 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			path = ../..;
 			sourceTree = "<group>";
 		};
@@ -508,6 +495,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BB478KK38S;
 				GCC_PREFIX_HEADER = LXJ2048/Prefix.pch;
 				INFOPLIST_FILE = LXJ2048/Info.plist;
@@ -522,6 +510,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = BB478KK38S;
 				GCC_PREFIX_HEADER = LXJ2048/Prefix.pch;
 				INFOPLIST_FILE = LXJ2048/Info.plist;

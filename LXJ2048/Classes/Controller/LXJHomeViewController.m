@@ -35,28 +35,28 @@
         case 0://3X3
             gVC.dimension = 3;
             gVC.threshold = 1024;
-            self.navigationController.navigationBarHidden = YES;
+//            self.navigationController.navigationBarHidden = YES;
             [self.navigationController pushViewController:gVC animated:YES];
             NSLog(@"%ld",tag);
             break;
         case 1://4X4
             gVC.dimension = 4;
             gVC.threshold = 2048;
-            self.navigationController.navigationBarHidden = YES;
+//            self.navigationController.navigationBarHidden = YES;
             [self.navigationController pushViewController:gVC animated:YES];
             NSLog(@"%ld",tag);
             break;
         case 2://5X5
             gVC.dimension = 5;
             gVC.threshold = 16384;
-            self.navigationController.navigationBarHidden = YES;
+//            self.navigationController.navigationBarHidden = YES;
             [self.navigationController pushViewController:gVC animated:YES];
             NSLog(@"%ld",tag);
             break;
         case 3://6X6
             gVC.dimension = 6;
             gVC.threshold = 32768;
-            self.navigationController.navigationBarHidden = YES;
+//            self.navigationController.navigationBarHidden = YES;
             [self.navigationController pushViewController:gVC animated:YES];
             NSLog(@"%ld",tag);
             break;
@@ -73,6 +73,12 @@
         btn.clipsToBounds = YES;
     }
 }
+/* 界面将要出现的时候设置导航栏显示 */
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:animated];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

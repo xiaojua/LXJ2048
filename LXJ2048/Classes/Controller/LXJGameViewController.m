@@ -87,7 +87,15 @@
 /* 点击返回按钮返回 */
 - (void)clickBtnBack{
     [self.navigationController popViewControllerAnimated:YES];
+    
+    
 }
+/* 界面将要出现的时候设置导航栏隐藏 */
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES animated:animated];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
