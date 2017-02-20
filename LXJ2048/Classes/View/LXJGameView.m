@@ -112,7 +112,8 @@ typedef enum :NSInteger{
     self.scoreLabel = [[UILabel alloc]init];
     self.scoreLabel.center = CGPointMake(self.frame.size.width/2, -60);
     self.scoreLabel.bounds = CGRectMake(0, 0, 100, 40);
-    self.scoreLabel.backgroundColor = [UIColor redColor];
+    self.scoreLabel.backgroundColor = [UIColor blueColor];
+    self.scoreLabel.textColor = [UIColor whiteColor];
     self.scoreLabel.textAlignment = NSTextAlignmentCenter;
     [self addSubview:self.scoreLabel];
     //初始化界面，视图已经准备好了，在随机位置出现随机数

@@ -21,7 +21,17 @@
     //启动页面停留时间
     [NSThread sleepForTimeInterval:1.0];
     
+    //设置导航栏
+    [self setNav];
+    
     return YES;
+}
+- (void)setNav{
+    NSDictionary *dict = @{
+                           NSForegroundColorAttributeName:[UIColor colorWithRed:105/255.0 green:105/255.0 blue:105/255.0 alpha:1],
+                           NSFontAttributeName:[UIFont systemFontOfSize:18]
+                           };
+    [[UINavigationBar appearance] setTitleTextAttributes:dict];
 }
 
 
