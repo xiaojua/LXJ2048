@@ -527,6 +527,7 @@
             a++;
         }
     }
+    NSLog(@"%d",a);
     if (a == 0) {
         for (int i=0; i<array.count; i++) {
             if ([self isEqualWithGroup:array andIndex:i]) {
@@ -627,7 +628,7 @@
     if ([arr[index+1] isEqual:arr[index]]) {
         isequal = YES;
     }
-    return YES;
+    return isequal;
 }
 
 //和上边的对比
@@ -636,7 +637,7 @@
     if ([arr[index-self.demn] isEqual:arr[index]]) {
         isequal = YES;
     }
-    return YES;
+    return isequal;
 }
 //和下边的对比
 - (BOOL)isEqualForDownWithArray:(NSMutableArray *)arr andIndex:(int)index{
@@ -644,7 +645,7 @@
     if ([arr[index+self.demn] isEqual:arr[index]]) {
         isequal = YES;
     }
-    return YES;
+    return isequal;
 }
 
 
